@@ -23,7 +23,9 @@ object Dependencies {
     // For uaParser utils
     "user-agent-parser repo"                 at "https://clojars.org/repo/",
     // For user-agent-utils
-    "user-agent-utils repo"                  at "https://raw.github.com/HaraldWalker/user-agent-utils/mvn-repo/"
+    "user-agent-utils repo"                  at "https://raw.github.com/HaraldWalker/user-agent-utils/mvn-repo/",
+    // For uaParser utils
+    "user-agent-parser repo" at "https://clojars.org/repo/"
   )
 
   object V {
@@ -51,6 +53,7 @@ object Dependencies {
     // Scala (compile only)
     val commonsLang3         = "3.1"
     val thrift               = "0.9.0"
+    val uaParser               = "1.3.0"
   }
 
   object Libraries {
@@ -78,5 +81,6 @@ object Dependencies {
     // Scala (compile only)
     val commonsLang3         = "org.apache.commons"         % "commons-lang3"             % V.commonsLang3   % "compile"
     val thrift               = "org.apache.thrift"          % "libthrift"                 % V.thrift         % "compile"
+    val uaParser         	 = "org.clojars.timewarrior"    %  "ua-parser"                % V.uaParser
   }
 }
